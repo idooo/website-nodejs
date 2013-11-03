@@ -1,0 +1,13 @@
+mixin slink(cls, link, icon)
+    a(href=link, class=cls)
+        i(class=icon)
+
+div(class="social_buttons_container",data-behavior="links")
+
+    +slink("mail",      "mailto:alex.shteinikov@gmail.com", "icon-paper-plane")
+    +slink("skype",     "skype:a.shteinikov", "icon-skype")
+    +slink("linkedin",  "http://www.linkedin.com/in/alexshteinikov", "icon-linkedin")
+    +slink("dribbble",  "http://dribbble.com/ido", "icon-dribbble")
+    +slink("twitter",   "http://twitter.com/ido_q", "icon-twitter")
+    +slink("facebook",  "http://www.facebook.com/idooo", "icon-facebook")
+    +slink("github", "https://github.com/idooo", "icon-github-circled")

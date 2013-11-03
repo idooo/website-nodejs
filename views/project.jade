@@ -1,0 +1,24 @@
+extends layout
+
+block content
+
+    div.top_bar
+
+        a(name="top")
+
+        div.home_link_container
+            &larr;&nbsp;
+            a(href="/") Home
+
+        div.name
+            | Alex Shteinikov
+
+        div.clear
+
+    div#main_container
+
+        div.project_name
+            | My work:
+            span!= project.name
+
+        block project_description

@@ -1,0 +1,100 @@
+{
+    "first": [
+        {
+            "name": "Tweeria",
+            "link": "/tweeria",
+            "img": "tweeria.jpg",
+            "link_name": "Learn More",
+            "content": [
+                "<div class='quote'>",
+                    "<p class='quote_body'>",
+                        "“Every retweet<br>",
+                        "is a life-or-death struggle”",
+                    "</p>",
+                    "<div class='triangle'></div>",
+                    "<p class='author'>Russell Brandom, <a href='http://www.theverge.com/2012/12/26/3804756/world-of-tweeria-like-it-or-not-your-twitter-feed-is-a-massive-role'>The Verge</a></p>",
+                "</div>",
+
+                "<p class='description'>",
+                    "This is my own startup:<br>",
+                    "lazy Twitter MMORPG<br>",
+                    "about monsters, dungeons<br>",
+                    "people and item crafting",
+                "</p>"
+            ]
+        },
+        {
+            "name": "Document<br>Management System<br>for Government",
+            "link": "/kgs",
+            "img": "kgs.jpg",
+            "link_name": "Continue",
+            "content": [
+                "<p class='description'>",
+                    "In 2011-2012 I worked<br>",
+                    "on user interface design<br>",
+                    "for DMS Estate Department<br>",
+                    "of Russian northern city<br>",
+                    "Salekhard",
+                    "<a href='http://goo.gl/maps/NJeYZ' class='geo'><i class='icon-location'></i></a>",
+                "</p>"
+            ]
+        },
+        {
+            "name": "Redesigned<br>City Portal",
+            "link": "/megatyumen",
+            "img": "megatyumen.jpg",
+            "link_name": "Details",
+            "content": [
+                     "<p class='description'>",
+                        "I worked in a team <br>",
+                        "on building a new pretty version<br>",
+                        "of local russian city portal.<br><br>",
+
+                        "Flexible responsive<br>",
+                        "layouts and module design<br>",
+                        "for different platforms",
+                    "</p>"
+            ]
+        }
+    ],
+    "second": [
+        {
+            "img": "small_medical.jpg",
+            "name": "City Hospital",
+            "caption": "Website for a local<br>city hospital"
+        },
+        {
+            "img": "small_taxi.jpg",
+            "name": "Taxi website",
+            "caption": "Strict and gray design<br>for taxi services"
+        },
+        {
+            "img": "small_insurance.jpg",
+            "name": "Car Insurance",
+            "caption": "Website with insurance<br>calculator"
+        },
+        {
+            "img": "small_poesh.jpg",
+            "name": "Food portal",
+            "caption": "My first startup<br>created in 2008"
+        }
+    ],
+    "third": [
+        {
+            "link":"mongohub.jpg",
+            "img":"micro_mongo.jpg"
+        },
+        {
+            "link":"mailbox.jpg",
+            "img":"micro_mailbox.jpg"
+        },
+        {
+            "link":"tweenk.jpg",
+            "img":"micro_tweenk.jpg"
+        },
+        {
+            "link":"stitch.jpg",
+            "img":"micro_stitch.jpg"
+        }
+    ]
+}

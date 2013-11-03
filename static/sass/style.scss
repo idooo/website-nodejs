@@ -1,0 +1,489 @@
+@import "preload";
+@import "icons";
+
+body {
+  color: black;
+  background: url("/static/css/images/texture_bg.jpg") repeat;
+  padding: 0;
+  margin: 0;
+  border-top: $main_border;
+  border-bottom: $main_border;
+  font-family: "PT Sans", "Arial";
+
+  a {
+    -moz-transition: color 0.2s 0.02s ease;
+    -o-transition: color 0.2s 0.02s ease;
+    -webkit-transition: color 0.2s 0.05s ease;
+    color: $link_color;
+    text-decoration: none;
+    border-bottom: 1px solid $link_inactive_color;
+
+    &:hover {
+      color: red;
+    }
+
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    line-height: 26px;
+  }
+
+}
+
+.clear {
+  clear: both;
+}
+
+#main_container {
+  width: 1000px;
+  clear: both;
+  margin: 0 auto;
+
+  &.index {
+    padding-bottom: 50px;
+  }
+
+}
+
+/*
+  About me top block
+*/
+
+.about_me {
+
+  overflow: hidden;
+  width: 355px;
+  margin: 30px auto 0;
+
+  .self_photo_container {
+    position: absolute;
+    z-index: 10;
+    width: 102px;
+    height: 102px;
+    margin-left: 0px;
+    overflow: hidden;
+
+    img {
+      margin-left: -6px;
+    }
+
+  }
+
+  .self_photo_overlay_container {
+    background: $sprite;
+    width: 102px;
+    height: 102px;
+    background-position: -3px -31px;
+    z-index: 11;
+    position: absolute;
+  }
+
+  .description {
+    margin-left: 125px;
+
+    h1 {
+      font-size: 28px;
+      margin: 9px 0 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: $text_color;
+      margin-top: 0;
+    }
+
+  }
+
+}
+
+/*
+  Social buttons
+*/
+
+.social_buttons_container {
+  width: 400px;
+  text-align: center;
+  margin: 30px auto 0;
+
+  a {
+    display: inline-block;
+    margin-right: 6px;
+    font-size: 24px;
+    border-bottom: none;
+  }
+}
+
+/*
+  Misc
+*/
+
+@mixin level_caption {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  margin: 40px auto 0;
+}
+
+.level_one {
+  @include level_caption;
+  font-size: 24px;
+}
+
+.level_two {
+  @include level_caption;
+  font-size: 18px;
+  margin-top: 10px;
+  color: $text_color;
+}
+
+/*
+  Portfolio level 1
+*/
+
+.portfolio_one {
+
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+
+  .item {
+
+    width: 215px;
+    height: 465px;
+    margin: 0 30px;
+    display: inline-table;
+    text-align: center;
+
+    h2 {
+      padding-top: 190px;
+    }
+
+    .portfolio_image {
+
+      margin-left: 8px;
+      
+      .image_container {
+
+        position: absolute;
+        z-index: 10;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+      }
+
+      .image_overlay_container {
+        background: $sprite;
+        background-position: -3px -137px;
+        width: 200px;
+        height: 200px;
+        z-index: 11;
+        position: absolute;
+      }
+    }
+
+    .quote {
+
+      padding-bottom: 20px;
+
+      p.quote_body {
+        background-color: $quote_color;
+        margin: 0 5px;
+        font-size: 16px;
+        font-style: italic;
+        padding: 6px 0;
+      }
+
+      .triangle {
+        width: 20px;
+        float: left;
+        border-style: solid;
+        border-width: 0 10px 10px 0;
+        border-color: transparent $quote_color transparent transparent;
+      }
+
+      .author {
+        font-size: 12px;
+        float: left;
+        margin: 4px 7px;
+      }
+    }
+
+    .description {
+      color: $text_color;
+      font-size: 16px;
+      clear: both;
+      padding-top: 0;
+      line-height: 20px;
+
+      a.geo {
+        border: none;
+        display: inline-block;
+      }
+
+    }
+
+    a.more {
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+
+/*
+  Portfolio level 2
+*/
+
+.portfolio_two {
+
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 20px;
+
+  .item {
+
+    width: 175px;
+    margin: 0 10px 15px;
+    display: inline-block;
+    text-align: center;
+
+    h2 {
+      padding-top: 140px;
+    }
+
+    .portfolio_image {
+
+      margin-left: 12px;
+
+      .image_container {
+
+        position: absolute;
+        z-index: 10;
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+      }
+
+      .image_overlay_container {
+        background: $sprite;
+        background-position: -207px -137px;
+        width: 150px;
+        height: 150px;
+        z-index: 11;
+        position: absolute;
+      }
+    }
+
+    .description {
+      color: $text_color;
+      font-size: 16px;
+      clear: both;
+      margin-top: 0;
+      line-height: 20px;
+    }
+  }
+}
+
+/*
+  Portfolio level 3
+*/
+
+.portfolio_three {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 30px;
+
+  .item {
+    height: 100px;
+    width: 120px;
+    margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 12px;
+
+    .image_container {
+      position: absolute;
+      z-index: 10;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .image_overlay_container {
+      background: $sprite;
+      background-position: -4px -31px;
+      width: 100px;
+      height: 100px;
+      z-index: 11;
+      position: absolute;
+    }
+  }
+
+  a {
+    border: none;
+  }
+}
+
+/* Top and Bottom Bars */
+
+.top_bar, .bottom_bar {
+
+  padding: 10px;
+  
+  .home_link_container {
+    float: left;
+    margin-right: 35px;
+    color: $link_color;
+  }
+
+  .name {
+    float: right;
+    width: 135px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3px;
+  }
+  
+  .small_social_buttons_container {
+
+    float: right;
+    margin: 4px 4px 0 0;
+
+    a {
+      border: none;
+      display: inline-block;
+      margin-right: 6px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}
+
+.bottom_bar {
+  padding-top: 50px;
+}
+
+/* Project info */
+
+.project_name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #c3c3c3;
+
+  span {
+    color: black;
+  }
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+}
+
+.header {
+  font-size: 24px;
+  padding: 16px 0 0;
+  z-index: 30;
+  position: relative;
+}
+
+p.text {
+  width: 700px;
+  line-height: 22px;
+  z-index: 20;
+  position: relative;
+}
+
+div.image_std {
+  margin: -19px -2px -14px -23px;
+  z-index: 10;
+  position: relative;
+
+  img {
+    position: relative;
+    z-index: 0;
+  }
+
+  span {
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin-top: -16px;
+    width: 768px;
+    padding-bottom: 16px;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+    z-index: 30;
+  }
+
+  &.first_image {
+    margin-top: 0;
+  }
+
+  &.big_center {
+    margin-left: -140px;
+  }
+
+  &.image_map {
+    margin-left: -140px;
+    margin-top: 10px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+div.side_image {
+  position: absolute;
+  margin-left: 790px;
+}
+
+div.side_info {
+  position: absolute;
+  margin-left: 750px;
+  margin-top: 24px;
+  background-color: rgba(0, 0, 0, 0.07);
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+div.empty_container {
+  height: 315px;
+  width: 100px;
+  
+  &.cars {
+    height: 100px;
+  }
+}
+
+div.work_info {
+  border-left: 10px solid rgba(0, 0, 0, 0.2);
+  width: 720px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 30px -30px 0px;
+  line-height: 21px;
+
+  a {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+}
+
+.big-error-container {
+  text-align: center;
+  margin-top: 200px;
+
+  h1 {
+    font-size: 36px;
+  }
+
+}

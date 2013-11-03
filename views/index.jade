@@ -1,0 +1,92 @@
+extends layout
+
+block content
+
+    div(id="main_container", class="index")
+
+        div(class="about_me")
+            div(class="self_photo_container")
+                img(src="/static/images/me.jpg")
+
+            div(class="self_photo_overlay_container")
+
+            div(class="description")
+                h1 Alex Shteinikov
+                p
+                    | I’m a web/ui designer with good
+                    br
+                    |programming background
+
+        include misc/social
+
+        div(class="level_one")
+            | I’m living in Brisbane, Australia
+            br
+            | and here are some of my latest works:
+
+        div(class="portfolio_one")
+
+            each project in projects.first
+
+                div(class="item")
+                    a(href=project.link, class="more")
+                        div(class="portfolio_image")
+                            div(class="image_container")
+                                img(src="/static/images/" + project.img)
+
+                            div(class="image_overlay_container")
+
+                    h2!= project.name
+                    != project.content
+                    a(href=project.link, class="more")= project.link_name
+
+
+        div(class="level_one")
+            | Here are some of my earlier works
+            br
+            | between 2007 and 2010:
+
+        div(class="portfolio_two")
+
+            each project in projects.second
+
+                div.item
+                    div.portfolio_image
+                        div.image_container
+                            img(src="/static/images/" + project.img)
+
+                        div.image_overlay_container
+
+                    h2= project.name
+                    p.description!= project.caption
+
+            div.view_all
+                a(href="/works") View works details
+
+
+        div(class="level_one")
+            | Design and programming for me is more than work.
+            br
+            | It’s my favorite hobby.
+
+        div(class="level_two")
+            | I enjoy creating things that make me happy:
+            br
+            | design improvement concepts, prototypes and others
+
+        div(class="portfolio_three")
+
+            each project in projects.third
+
+                a(href="/static/images/hobby/" + project.link, rel="lightbox[three]")
+                    div.item
+                        div.image_container
+                            img(src="/static/images/" + project.img)
+
+                        div.image_overlay_container
+
+
+        div(class="level_one")
+            | My social profiles once again:
+
+        include misc/social
