@@ -375,6 +375,8 @@ div.side_info {
   background-color: rgba(0, 0, 0, 0.07);
   padding: 10px 15px;
   font-size: 14px; }
+  div.side_info.mt5 {
+    margin-top: 5px; }
 
 div.empty_container {
   height: 315px;

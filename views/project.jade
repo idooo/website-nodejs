@@ -10,6 +10,9 @@ block content
             &larr;&nbsp;
             a(href="/") Home
 
+        - var socialClass = 'small_social_buttons_container'
+        include misc/social
+
         div.name
             | Alex Shteinikov
 
@@ -18,7 +21,9 @@ block content
     div#main_container
 
         div.project_name
-            | My work:
+            | My work:&nbsp;
             span!= project.name
 
         block project_description
+
+    br

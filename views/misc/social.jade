@@ -2,7 +2,7 @@ mixin slink(cls, link, icon)
     a(href=link, class=cls)
         i(class=icon)
 
-div(class="social_buttons_container",data-behavior="links")
+div(class="#{socialClass}",data-behavior="links")
 
     +slink("mail",      "mailto:alex.shteinikov@gmail.com", "icon-paper-plane")
     +slink("skype",     "skype:a.shteinikov", "icon-skype")

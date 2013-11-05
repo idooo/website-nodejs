@@ -2,7 +2,6 @@ var express = require('express'),
     fs    = require('fs'),
     nconf = require('nconf');
 
-
 function preloadData(nconf) {
     var bindings = nconf.get('data'),
         data = {};
@@ -48,9 +47,10 @@ app.get('/', function(req, res){
 });
 
 app.get(/^\/(tweeria|kgs|megatyumen|works)$/i, function(req, res){
-    console.log(req.params);
 
-    switch(req.params)
+    var link = req.params[0];
+
+    switch(link)
     {
         case 'tweeria':
             data.project = {
@@ -76,8 +76,8 @@ app.get(/^\/(tweeria|kgs|megatyumen|works)$/i, function(req, res){
             break;
     }
 
-    res.render('projects/tweeria', data);
+    res.render('projects/'+link, data);
 });
 
 app.listen(server_conf.port, server_conf.host);
-console.log('Listening');
+console.log('Listening...');

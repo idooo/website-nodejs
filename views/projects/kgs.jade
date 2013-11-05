@@ -1,0 +1,85 @@
+extends ../project
+
+block project_description
+
+    div.header
+        | Our government customer wanted a system that would let its employees control
+        br
+        | and manage government property quickly and easily.
+
+    p.text
+        | Department’s employees used a lot of different Excel files not connected
+        | with each other to manage government property before the new system release.
+        | This system automated their work to operate and maintain a huge number of documents,
+        | registers and processes.
+
+    div.side_info.mt5
+        | — Business analysis
+        br
+        | — UI/UX design
+        br
+
+
+    div.image_std
+        img(src="/static/images/2_kgs/1_dashboard.png")
+        span
+            | Standard personal dashboard
+
+    p.text
+        | After logging in each user gets his department’s dashboard page (there are 15 departments at all)
+        | with a list of available actions, saved queries and notifications.
+
+    div.image_std
+        img(src="/static/images/2_kgs/2_table.png")
+        span
+            | Table of useful data
+
+    p.text
+        | Basically, any register or list of processes is just a table.
+        | There are two big problems with these tables: a large vertical size (tens of thousands of objects)
+        | and a large horizontal size (large number of columns, which often does not fit in 1024px wide).
+        | Therefore, information was placed in these tables very densely.
+
+    div.image_std
+        img(src="/static/images/2_kgs/3_bigtable.png")
+        span
+            | Table with periodic filters and relative changes
+
+    p.text
+        | Also there is a set of custom tables, which must meet specific users' requirements.
+        | For example, a periodic table with relative data changes.
+
+    div.image_std
+        img(src="/static/images/2_kgs/4_element.png")
+        span
+            | Record edit page
+
+    p.text
+        | Generally, edit page of the object or process is a card with a set of fields
+        | with minimum possible number of field types. In the right part of the page
+        | there is a fixed block with navigation to quickly select any part of record card.
+        | This block can be turned off if necessary.
+
+    div.side_image
+        img(src="/static/images/2_kgs/mini_1.png")
+
+    div.image_std
+        img(src="/static/images/2_kgs/5_xul.png")
+        span
+            | XUL-based desktop client
+
+    p.text
+        | The system is a web service, but we decided to make a standalone client
+        | in order to simplify working with it. We used Mozilla XUL Runner with my
+        | redesigned interface. So we threw out all the unnecessary crap in the browser
+        | and added a lot of cool features.
+
+    p.text
+        | In addition, we developed a lot of other useful stuff: notifications,
+        | event logs, calendar, search, history, file versions and etc.
+
+    p.text
+        | During the developing process of this system I was responsible
+        | for user interface design and user experience. Eventually,
+        | I designed and prototyped each page for each department with their own
+        | fields and actions and with dozens of unique working processes.
